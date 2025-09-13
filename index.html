@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Paws & Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://static.photos/pets/1200x630/1');
+            background-size: cover;
+            background-position: center;
+        }
+        .pet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            color: #3B82F6;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-feather="heart" class="h-8 w-8 text-blue-500"></i>
+                        <span class="ml-2 text-xl font-bold text-gray-800">Paws & Care</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#" class="text-blue-600 px-3 py-2 text-sm font-medium border-b-2 border-blue-500">Inicio</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium">Servicios</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium">Nosotros</a>
+                    <a href="#team" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium">Equipo</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contacto</a>
+                    <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Reservar cita</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-bg h-screen flex items-center justify-center text-white">
+        <div class="text-center px-4" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Cuidamos a tu mascota como en casa</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Servicios veterinarios de calidad con amor y profesionalismo</p>
+            <div class="space-x-4">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium transition duration-300 inline-block">Reservar ahora</a>
+                <a href="#services" class="bg-white hover:bg-gray-100 text-blue-500 px-6 py-3 rounded-md text-lg font-medium transition duration-300 inline-block">Nuestros servicios</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Nuestros Servicios</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Ofrecemos una amplia gama de servicios para mantener saludable a tu mascota</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon text-blue-500 mb-4">
+                        <i data-feather="activity" class="h-10 w-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Chequeo General</h3>
+                    <p class="text-gray-600">Exámenes completos para detectar cualquier problema de salud en su etapa inicial.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon text-blue-500 mb-4">
+                        <i data-feather="scissors" class="h-10 w-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Peluquería</h3>
+                    <p class="text-gray-600">Servicios de baño, corte de pelo y uñas para mantener a tu mascota limpia y cómoda.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon text-blue-500 mb-4">
+                        <i data-feather="shield" class="h-10 w-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Vacunación</h3>
+                    <p class="text-gray-600">Programas completos de vacunación para proteger a tu mascota de enfermedades.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon text-blue-500 mb-4">
+                        <i data-feather="alert-triangle" class="h-10 w-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Emergencias</h3>
+                    <p class="text-gray-600">Atención veterinaria inmediata las 24 horas para casos de emergencia.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon text-blue-500 mb-4">
+                        <i data-feather="box" class="h-10 w-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Cirugías</h3>
+                    <p class="text-gray-600">Procedimientos quirúrgicos realizados con los más altos estándares de seguridad.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon text-blue-500 mb-4">
+                        <i data-feather="home" class="h-10 w-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Hospedaje</h3>
+                    <p class="text-gray-600">Espacio seguro y cómodo para cuando necesites dejar a tu mascota por un tiempo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div class="mb-8 lg:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/veterinary/640x360/1" alt="Veterinaria" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">Sobre Nosotros</h2>
+                    <p class="text-lg text-gray-600 mb-6">En Paws & Care nos dedicamos a proporcionar la mejor atención médica para tus mascotas. Nuestro equipo de profesionales altamente capacitados está comprometido con el bienestar animal.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Más de 15 años de experiencia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Equipamiento de última generación</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Enfoque personalizado para cada mascota</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">Ambiente cálido y familiar</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Nuestro Equipo</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Profesionales dedicados al cuidado de tu mascota</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/doctor/400x400/1" alt="Dr. Carlos Méndez" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Carlos Méndez</h3>
+                        <p class="text-blue-500 mb-2">Veterinario Principal</p>
+                        <p class="text-gray-600">Especialista en cirugía y medicina interna con más de 12 años de experiencia.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/doctor/400x400/2" alt="Dra. Laura Fernández" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dra. Laura Fernández</h3>
+                        <p class="text-blue-500 mb-2">Veterinaria</p>
+                        <p class="text-gray-600">Especialista en dermatología y nutrición animal. Apasionada por el bienestar animal.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/doctor/400x400/3" alt="Dr. Javier Ruiz" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Javier Ruiz</h3>
+                        <p class="text-blue-500 mb-2">Cirujano Veterinario</p>
+                        <p class="text-gray-600">Experto en cirugías complejas y procedimientos ortopédicos.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <img src="http://static.photos/doctor/400x400/4" alt="María Gómez" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">María Gómez</h3>
+                        <p class="text-blue-500 mb-2">Peluquera Canina</p>
+                        <p class="text-gray-600">Profesional en estética y cuidado de mascotas con 8 años de experiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Lo que dicen nuestros clientes</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Testimonios de dueños de mascotas felices</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/1" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Torres</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"El Dr. Carlos salvó la vida de mi perro Max cuando tuvo una emergencia. El personal fue increíblemente atento y profesional. ¡Recomiendo totalmente esta clínica!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/2" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Roberto Sánchez</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Llevo a mis tres gatos aquí desde que eran cachorros. Siempre reciben la mejor atención y los tratamientos son muy efectivos. El servicio es excepcional."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/3" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Lucía Mendoza</h4>
+                            <div class="flex text-yellow-400">
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"María hace magia con el peluqueado de mi caniche. Siempre queda hermoso y mi perro está muy tranquilo con ella. Excelente servicio de peluquería canina."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-extrabold sm:text-4xl mb-4">¿Listo para cuidar de tu mascota?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Agenda una cita hoy mismo y dale a tu mascota la atención que se merece.</p>
+            <a href="#" class="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-md text-lg font-medium transition duration-300 inline-block">Reservar cita ahora</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <div class="mb-8 lg:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">Contáctanos</h2>
+                    <p class="text-lg text-gray-600 mb-6">Estamos aquí para responder cualquier pregunta que tengas sobre el cuidado de tu mascota.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Dirección</h4>
+                                <p class="text-gray-600">Av. Principal 1234, Ciudad, País</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Teléfono</h4>
+                                <p class="text-gray-600">+1 234 567 890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-600">contacto@pawscare.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i data-feather="clock" class="text-blue-500 mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Horario</h4>
+                                <p class="text-gray-600">Lunes a Viernes: 9am - 7pm<br>Sábados: 9am - 2pm<br>Emergencias: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-lg font-medium transition duration-300">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Paws & Care</h3>
+                    <p class="text-gray-400">Cuidando a tus mascotas con amor y profesionalismo desde 2008.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Servicios</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">Nosotros</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white transition">Equipo</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Chequeo General</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Vacunación</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cirugías</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Peluquería</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Emergencias</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="youtube" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Reservar cita</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Paws & Care Veterinaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
